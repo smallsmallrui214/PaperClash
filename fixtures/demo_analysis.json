@@ -1,0 +1,123 @@
+{
+  "demoNotice": "【虚构测试数据】论文名称、摘要、统计数字和 Benchmark-S 均为人为构造，不代表真实研究。",
+  "question": "在复杂规划任务中，显式软约束提示能否提升任务成功率？",
+  "judgments": [
+    {
+      "paperId": "demo_a",
+      "stance": "support",
+      "claim": "显式软约束提示使复杂任务成功率从60%升至78%。",
+      "evidenceQuote": "using explicit soft-constraint prompts achieved 78% task success, compared with 60% without the prompts",
+      "caveat": "仅为单一虚构基准结果；需要核查数据集和实验方案。"
+    },
+    {
+      "paperId": "demo_b",
+      "stance": "oppose",
+      "claim": "同一虚构基准描述中，显式提示的成功率为55%，低于60%的基线。",
+      "evidenceQuote": "using explicit soft-constraint prompts achieved 55% task success, compared with 60% without the prompts",
+      "caveat": "与A的数值差异构成潜在冲突，仍需核查实验细节。"
+    },
+    {
+      "paperId": "demo_c",
+      "stance": "insufficient",
+      "claim": "仅在简单任务中报告提升；不能回答复杂任务的问题。",
+      "evidenceQuote": "Complex planning tasks were not evaluated.",
+      "caveat": "任务难度不同，不能外推复杂任务。"
+    },
+    {
+      "paperId": "demo_d",
+      "stance": "conditional",
+      "claim": "提示加重排组合优于基线，但无法隔离提示本身的效果。",
+      "evidenceQuote": "The independent effect of prompting was not measured.",
+      "caveat": "额外重排阶段是混杂变量。"
+    },
+    {
+      "paperId": "demo_e",
+      "stance": "insufficient",
+      "claim": "只描述数据集，没有对比实验。",
+      "evidenceQuote": "We report no experiments comparing prompts and no task success rates.",
+      "caveat": "缺少相关实证结果。"
+    }
+  ],
+  "comparisons": [
+    {
+      "aId": "demo_a",
+      "bId": "demo_b",
+      "relation": "potential_conflict",
+      "explanation": "A报告显式提示提高成功率，B报告降低；两者都声称相同的虚构基准和复杂任务条件，构成潜在冲突。",
+      "difference": "相同问题与类似设置下，结果方向相反。",
+      "verifyNext": "核查具体划分、随机种子、提示模板、统计置信区间。"
+    },
+    {
+      "aId": "demo_a",
+      "bId": "demo_c",
+      "relation": "different_conditions",
+      "explanation": "A研究复杂任务，C只研究简单任务，不能直接比较结论。",
+      "difference": "复杂任务 vs 简单任务。",
+      "verifyNext": "在统一复杂任务集复现实验。"
+    },
+    {
+      "aId": "demo_a",
+      "bId": "demo_d",
+      "relation": "different_conditions",
+      "explanation": "A只用提示，D额外使用重排，无法将效果归因于同一因素。",
+      "difference": "仅提示 vs 提示+重排。",
+      "verifyNext": "增加仅使用提示、仅使用重排的消融实验。"
+    },
+    {
+      "aId": "demo_a",
+      "bId": "demo_e",
+      "relation": "insufficient",
+      "explanation": "E只介绍基准，不包含效果数据。",
+      "difference": "缺少可比较的任务成功率。",
+      "verifyNext": "查找E基准上的实际实证研究。"
+    },
+    {
+      "aId": "demo_b",
+      "bId": "demo_c",
+      "relation": "different_conditions",
+      "explanation": "B是复杂任务实验，C是简单任务实验。",
+      "difference": "任务复杂度不同。",
+      "verifyNext": "在相同任务难度下比较。"
+    },
+    {
+      "aId": "demo_b",
+      "bId": "demo_d",
+      "relation": "different_conditions",
+      "explanation": "B没有重排，D加入重排，不能直接认定研究结果矛盾。",
+      "difference": "干预设置不同。",
+      "verifyNext": "分别测试提示和重排的独立效应。"
+    },
+    {
+      "aId": "demo_b",
+      "bId": "demo_e",
+      "relation": "insufficient",
+      "explanation": "E没有报告成功率。",
+      "difference": "没有对应实验。",
+      "verifyNext": "寻找具有可比指标的论文。"
+    },
+    {
+      "aId": "demo_c",
+      "bId": "demo_d",
+      "relation": "different_conditions",
+      "explanation": "C使用简单任务，D为复杂任务且加入了重排。",
+      "difference": "任务难度和方法均不同。",
+      "verifyNext": "统一任务、方法和指标后复现。"
+    },
+    {
+      "aId": "demo_c",
+      "bId": "demo_e",
+      "relation": "insufficient",
+      "explanation": "E未提供对比实验。",
+      "difference": "缺少可比的实验结果。",
+      "verifyNext": "检索有实验结果的相关论文。"
+    },
+    {
+      "aId": "demo_d",
+      "bId": "demo_e",
+      "relation": "insufficient",
+      "explanation": "E只描述基准而没有性能证据。",
+      "difference": "E没有对照数据。",
+      "verifyNext": "用实证论文替换E。"
+    }
+  ]
+}

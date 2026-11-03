@@ -1,0 +1,51 @@
+{
+  "demoNotice": "【虚构测试数据】论文名称、摘要、统计数字和 Benchmark-S 均为人为构造，不代表真实研究。",
+  "question": "在复杂规划任务中，显式软约束提示能否提升任务成功率？",
+  "searchTerm": "LLM soft constraints complex planning benchmark",
+  "papers": [
+    {
+      "id": "demo_a",
+      "title": "Synthetic Study A — Prompting Improves Complex Planning",
+      "year": 2025,
+      "source": "虚构演示论文",
+      "abstract": "On the synthetic Benchmark-S with 200 complex planning tasks, a fixed model using explicit soft-constraint prompts achieved 78% task success, compared with 60% without the prompts. No reranking was applied.",
+      "isDemo": true
+    },
+    {
+      "id": "demo_b",
+      "title": "Synthetic Study B — Prompting Reduces Complex Planning Success",
+      "year": 2025,
+      "source": "虚构演示论文",
+      "abstract": "On the synthetic Benchmark-S with 200 complex planning tasks, the same fixed model using explicit soft-constraint prompts achieved 55% task success, compared with 60% without the prompts. No reranking was applied.",
+      "isDemo": true
+    },
+    {
+      "id": "demo_c",
+      "title": "Synthetic Study C — Benefits Only Evaluated on Simple Tasks",
+      "year": 2024,
+      "source": "虚构演示论文",
+      "abstract": "On 200 simple planning tasks from the synthetic Benchmark-S, explicit soft-constraint prompts increased task success from 70% to 83%. Complex planning tasks were not evaluated.",
+      "isDemo": true
+    },
+    {
+      "id": "demo_d",
+      "title": "Synthetic Study D — Prompting Combined With Reranking",
+      "year": 2026,
+      "source": "虚构演示论文",
+      "abstract": "On the synthetic Benchmark-S with 200 complex planning tasks, explicit soft-constraint prompts combined with an additional reranking stage achieved 82% task success, compared with a 60% baseline that used neither prompts nor reranking. The independent effect of prompting was not measured.",
+      "isDemo": true
+    },
+    {
+      "id": "demo_e",
+      "title": "Synthetic Study E — A Benchmark Description",
+      "year": 2024,
+      "source": "虚构演示论文",
+      "abstract": "We release the synthetic Benchmark-S and describe its categories of planning tasks. We report no experiments comparing prompts and no task success rates.",
+      "isDemo": true
+    }
+  ],
+  "recommendedSelection": [
+    "demo_a",
+    "demo_b"
+  ]
+}

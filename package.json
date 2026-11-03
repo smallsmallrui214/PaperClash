@@ -1,0 +1,35 @@
+{
+  "name": "paperclash",
+  "version": "1.0.0",
+  "description": "面向计算机学生的论文检索、观点对照与研究启发工具",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build --webpack",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "start": "next start"
+  },
+  "keywords": [],
+  "dependencies": {
+    "lucide-react": "^1.66.0",
+    "next": "^16.4.4",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.4",
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "eslint": "^9.39.4",
+    "eslint-config-next": "^16.4.4",
+    "tailwindcss": "^4.3.4",
+    "typescript": "^6.0.3",
+    "vitest": "^5.1.0"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=22"
+  }
+}

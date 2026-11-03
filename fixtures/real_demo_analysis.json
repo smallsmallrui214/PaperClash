@@ -1,0 +1,28 @@
+{
+  "judgments": [
+    {
+      "paperId": "bert",
+      "stance": "support",
+      "claim": "BERT 通过微调适应多种语言任务。",
+      "evidenceQuote": "the pre-trained BERT model can be fine-tuned with just one additional output layer",
+      "caveat": "摘要描述的是微调设置，不能直接推广到无需微调的场景。"
+    },
+    {
+      "paperId": "gpt3",
+      "stance": "support",
+      "claim": "GPT-3 在不更新参数的少样本设置下适应多种任务。",
+      "evidenceQuote": "GPT-3 is applied without any gradient updates or fine-tuning",
+      "caveat": "摘要报告的是少样本表现，模型规模与任务设置不同。"
+    }
+  ],
+  "comparisons": [
+    {
+      "aId": "bert",
+      "bId": "gpt3",
+      "relation": "different_conditions",
+      "explanation": "两篇都探索跨任务适应，但 BERT 依赖微调，而 GPT-3 的实验采用上下文示例且不更新参数。",
+      "difference": "参数微调与上下文少样本学习的设置不同。",
+      "verifyNext": "核查任务、模型规模、训练成本和评价指标，再比较效果。"
+    }
+  ]
+}

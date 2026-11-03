@@ -1,0 +1,32 @@
+# Dependencies and generated output
+node_modules/
+.next/
+out/
+dist/
+build/
+coverage/
+.npm-cache/
+*.tsbuildinfo
+*.log
+
+# Credentials and local settings
+.env
+.env.*
+!.env.example
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local planning and generated submission materials
+AGENTS.md
+CODEX_PROMPT.md
+PLAN.md
+TEST_CASES.md
+REFERENCES.md
+assets/
+output/
+temp/
+tmp/
+fixtures/openalex_mock.json
+.env.example

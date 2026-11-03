@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" role="img" aria-label="PaperClash logo">
+  <rect width="64" height="64" rx="16" fill="#4F61D2"/>
+  <path d="M14 16c8-3 13-2 18 2v28c-5-4-10-5-18-2V16Zm36 0c-8-3-13-2-18 2v28c5-4 10-5 18-2V16Z" fill="#FFFFFF" fill-opacity=".96"/>
+  <path d="m24 24 7 7-7 7m16-14-7 7 7 7" stroke="#4F61D2" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M32 18v28" stroke="#D5DDFF" stroke-width="1.8"/>
+</svg>

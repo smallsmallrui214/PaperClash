@@ -1,0 +1,1 @@
+import './globals.css';export const metadata={title:'PaperClash｜论文观点对撞机'};export default function Layout({children}:{children:React.ReactNode}){return <html lang="zh-CN"><body>{children}</body></html>}
