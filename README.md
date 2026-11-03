@@ -38,7 +38,7 @@ npm ci
 npm run dev
 ```
 
-浏览器打开 **http://localhost:3000**。如果端口被占用，以终端提示的地址为准。停止服务时在终端按 `Ctrl+C`。
+浏览器打开 [http://localhost:3000](http://localhost:3000)。如果端口被占用，以终端提示的地址为准。停止服务时在终端按 `Ctrl+C`。
 
 ### 3. 先体验示例
 
