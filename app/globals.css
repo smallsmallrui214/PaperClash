@@ -136,18 +136,14 @@ input[type="checkbox"] { width: 17px; height: 17px; margin: 0; flex-shrink: 0; a
 .stance-badge.conditional { color: #a88a5e; background: #faf3e8; }
 .stance-badge.insufficient { color: #8989a0; background: #eff0f5; }
 .judgment-card h3 { margin-top: 12px; font-size: 16px; }
-.claim { font-size: 14px; margin-top: 12px; color: #475569; }
-.caveat { font-size: 12px; color: #64748b; margin-top: 13px; }
 .evidence-block { min-width: 0; padding: 18px; background: #faf9fd; border: 1px solid #eee9f4; border-radius: 11px; margin-top: 16px; font-size: 12px; }
 .evidence-title { font-size: 14px; font-weight: 650; color: #475569; overflow-wrap: anywhere; }
-.evidence-quote { padding-left: 12px; border-left: 2px solid #c9bada; color: #475569; font-size: 14px; line-height: 1.8; overflow-wrap: anywhere; margin: 12px 0; }
-.evidence-block details { padding-top: 10px; margin-top: 12px; border-top: 1px solid #ece5f1; }
-.evidence-block summary { cursor: pointer; color: #6c61cc; font-size: 12px; width: fit-content; }
 .abstract-text { color: #475569; font-size: 14px; line-height: 1.85; overflow-wrap: anywhere; margin-top: 12px; }
-mark { color: #786178; background: #f4e9b9; padding: 1px 0; border-radius: 2px; }
+.evidence-block > .abstract-text:first-child { margin-top: 0; }
 .source-link { display: inline-flex; align-items: center; gap: 5px; color: #6c61cc; font-size: 12px; text-decoration: none; margin-top: 12px; }
 .source-link:hover { color: #7b5693; }
 .compare-panel, .ideas-panel { margin-top: 24px; padding: 28px; }
+.compare-panel .panel-heading .compare-tagline { color: #8d79aa; font-size: 14px; line-height: 1.6; letter-spacing: .02em; }
 .compare-selectors { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; padding-top: 3px; }
 .comparison-result { padding: 20px 21px; border-radius: 12px; background: #f5f2fb; border: 1px solid #ece5f4; margin-top: 20px; }
 .comparison-result > p { margin-top: 12px; color: #475569; font-size: 14px; }
@@ -186,6 +182,7 @@ mark { color: #786178; background: #f4e9b9; padding: 1px 0; border-radius: 2px; 
 .provider-hint { color: #64748b; font-size: 12px; }
 .settings-note { display: flex; gap: 9px; color: #64748b; font-size: 12px; line-height: 1.8; background: #f5f0fb; border-radius: 10px; padding: 13px 15px; }
 .settings-note svg { margin-top: 3px; }
+.settings-error { color: #b23850; font-size: 13px; line-height: 1.5; }
 .guide-steps { display: grid; gap: 22px; }
 .guide-steps article { display: flex; gap: 14px; }
 .guide-number { display: flex; align-items: center; justify-content: center; width: 29px; height: 29px; background: #f0e7f7; color: #a177b6; border-radius: 9px; font-size: 12px; font-weight: 750; flex-shrink: 0; }

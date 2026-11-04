@@ -12,7 +12,7 @@
       "year": 2018,
       "source": "arXiv · Devlin 等",
       "url": "https://arxiv.org/abs/1810.04805",
-      "abstract": "BERT is designed to pre-train deep bidirectional representations from unlabeled text by jointly conditioning on both left and right context in all layers. As a result, the pre-trained BERT model can be fine-tuned with just one additional output layer to create state-of-the-art models for a wide range of tasks, such as question answering and language inference, without substantial task-specific architecture modifications."
+      "abstract": "BERT 旨在从无标注文本中预训练深度双向表示，在所有网络层同时利用左右两侧的上下文。预训练后的 BERT 模型只需增加一个输出层并进行微调，无需对任务架构进行大量专门修改，就能为问答、语言推理等多种任务构建达到当时先进水平的模型。"
     },
     {
       "id": "gpt3",
@@ -20,7 +20,7 @@
       "year": 2020,
       "source": "arXiv · Brown 等",
       "url": "https://arxiv.org/abs/2005.14165",
-      "abstract": "Here we show that scaling up language models greatly improves task-agnostic, few-shot performance, sometimes even reaching competitiveness with prior state-of-the-art fine-tuning approaches. For all tasks, GPT-3 is applied without any gradient updates or fine-tuning, with tasks and few-shot demonstrations specified purely via text interaction with the model."
+      "abstract": "研究表明，扩大语言模型的规模能够显著提升不针对特定任务的少样本表现，有时甚至可以与此前达到先进水平的微调方法相媲美。对于所有任务，GPT-3 的使用均不进行梯度更新或微调，而是完全通过文本交互来指定任务和少样本示例。"
     }
   ]
 }
